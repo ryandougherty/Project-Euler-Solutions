@@ -18,18 +18,26 @@ public class Problem6 implements ProjectEulerInterface {
         System.out.println(new Problem6().run());
     }
     
+    private int n = 100;
+    
     @Override
     public String run() {
         /*
         It is known that 1 + 2 + ... + n = n*(n+1)/2,
-        So (1+2+...+100)^2 = (100*101/2)^2 = 5050^2.
         
         Also, it is also known that 1^2 + ... + n^2 = n*(n+1)*(2n+1)/6,
-        So 1^2+...+100^2 = 100*101*201/6 = 2030100/6 = 338350
+
+        So the subtraction of the two is:
         
-        5050^2 - 338350 = 25164150.
+        n^2*(n+1)^2/4 - n*(n+1)*(2n+1)/6
+        = (3n^2*(n+1)^2 - 2n*(n+1)*(2n+1))/12
+        = n*(n+1)*(3n*(n+1) - 2*(2n+1))/12
+        = n*(n+1)*(3n^2 + 3n - 4n - 2)/12
+        = n*(n+1)*(3n^2 - n - 2)/12
+        = n*(n+1)*(3n+2)*(n-1)/12
+        
         */
-        return "25164150";
+        return String.valueOf(n*(n+1)*(3*n+2)*(n-1)/12);
     }
     
 }
