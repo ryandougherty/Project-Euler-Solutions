@@ -8,7 +8,6 @@ package problems1_100;
 
 
 
-import java.math.BigInteger;
 import projecteulerinterface.ProjectEulerInterface;
 
 /**
