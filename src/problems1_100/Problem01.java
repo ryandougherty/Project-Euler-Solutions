@@ -11,10 +11,10 @@ import projecteulerinterface.ProjectEulerInterface;
  *
  * @author redoughe
  */
-public class Problem1 implements ProjectEulerInterface {
+public class Problem01 implements ProjectEulerInterface {
 
     public static void main(String[] args) {
-        System.out.println(new Problem1().run());
+        System.out.println(new Problem01().run());
     }
 
     @Override

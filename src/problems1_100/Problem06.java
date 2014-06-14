@@ -12,10 +12,10 @@ import projecteulerinterface.ProjectEulerInterface;
  *
  * @author redoughe
  */
-public class Problem6 implements ProjectEulerInterface {
+public class Problem06 implements ProjectEulerInterface {
 
     public static void main(String[] args) {
-        System.out.println(new Problem6().run());
+        System.out.println(new Problem06().run());
     }
     
     private int n = 100;
