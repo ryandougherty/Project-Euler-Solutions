@@ -18,7 +18,7 @@ public class Problem06 implements ProjectEulerInterface {
         System.out.println(new Problem06().run());
     }
     
-    private int n = 100;
+    private final int n = 100;
     
     @Override
     public String run() {
